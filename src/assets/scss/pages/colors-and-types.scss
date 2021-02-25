@@ -1,0 +1,119 @@
+.container--colors-and-types {
+  max-width: 1162px;
+  margin: 55px auto 0;
+  padding: 0 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo--ui {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+//Colors start
+.colors__list {
+  width: 281px;
+}
+
+.colors__item {
+  display: flex;
+  justify-content: space-between;
+
+  & + .colors__item {
+    margin-top: 18px;
+  }
+}
+
+.colors__title {
+  margin-top: 10px;
+
+  &--75,
+  &--50,
+  &--25 {
+    margin-right: 10px;
+    word-spacing: 3px;
+  }
+  &--5 {
+    margin-right: 21px;
+  }
+  &--purple {
+    margin-right: 106px;
+  }
+  &--green {
+    margin-right: 112px;
+  }
+}
+
+.colors__code {
+  margin-top: -6px;
+}
+
+//Fonts start
+.fonts__inner {
+  max-width: 436px;
+}
+
+.fonts__item {
+  position: relative;
+  padding-left: 60px;
+
+  & + .fonts__item {
+    margin-top: 52px;
+
+    &--body {
+      margin-top: 47px;
+    }
+  }
+
+  &--h1 {
+    word-spacing: 3px;
+
+    &::before {
+      position: absolute;
+      content: 'H1';
+      opacity: .25;
+      top: 0;
+      left: 0;
+      font-weight: 400;
+    }
+  }
+  &--h2 {
+    word-spacing: 2.1px;
+
+    &::before {
+      position: absolute;
+      content: 'H2';
+      opacity: .25;
+      top: 0;
+      left: 3px;
+      font-weight: 400;
+    }
+  }
+  &--h3 {
+    text-transform: uppercase;
+    word-spacing: 1.1px;
+
+    &::before {
+      position: absolute;
+      content: 'H3';
+      opacity: .25;
+      top: 0;
+      left: 13px;
+      font-weight: 400;
+    }
+  }
+  &--body {
+    line-height: 1.8;
+
+    &::before {
+      position: absolute;
+      content: 'Body';
+      opacity: .25;
+      top: 0;
+      left: -7px;
+    }
+  }
+}
+
+@import "../../../components/color/color";

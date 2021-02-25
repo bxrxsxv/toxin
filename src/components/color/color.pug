@@ -1,0 +1,9 @@
+mixin color(modifier, title, code='#1F2041')
+  li.colors__item
+    div(class='colors__square colors__square--' +modifier)
+    .colors__description
+      if (title)
+        h2(class='colors__title colors__title--' + modifier)= title
+      else
+        h2(class='colors__title colors__title--' + modifier) Dark Shade #{modifier}%
+      p.colors__code #{code}

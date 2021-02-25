@@ -1,0 +1,31 @@
+include ../components/color/color
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Colors And Types
+body
+  .wrapper
+    a(class='logo logo--ui' href='index.html'): img(src='assets/img/logo-ui.svg')
+    .container--colors-and-types
+      section.colors
+        ul.colors__list
+          +color('100')
+          +color('75')
+          +color('50')
+          +color('25')
+          +color('5')
+          +color('purple', 'Purple', '#BC9CFF')
+          +color('green', 'Green', '#6FCF97')
+
+      section.fonts
+        .fonts__inner
+          h1.fonts__item.fonts__item--h1 This one is the sub-section or widget title
+          h2.fonts__item.fonts__item--h2 Next one is the item title inside widgets
+          h3.fonts__item.fonts__item--h3 This is a label or CTA text
+          p.fonts__item.fonts__item--body
+            |This is the body text which is used for most
+            br
+            |of the design, like paragraphs, lists, etc.
