@@ -1,3 +1,7 @@
+.colors-and-types {
+  line-height: 2.4;
+}
+
 .container--colors-and-types {
   max-width: 1162px;
   margin: 55px auto 0;
@@ -117,3 +121,30 @@
 }
 
 @import "../../../components/color/color";
+
+@media (max-width: 790px) {
+  .container--colors-and-types {
+    display: block;
+  }
+
+  .colors__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .colors__list {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .colors__item {
+    margin: 0 20px 18px;
+
+    & + .colors__item {
+      margin-top: 0;
+    }
+  }
+
+  .colors__description {
+    margin-left: 10px;
+  }
+}
