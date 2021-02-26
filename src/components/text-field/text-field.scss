@@ -1,0 +1,26 @@
+.text-field {
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba($darkShade, .25);
+  border-radius: 4px;
+  padding: 13px 15px;
+  outline: none;
+  font-family: $mainFont;
+  color: rgba($darkShade, .75);
+
+  &::placeholder {
+    color: rgba($darkShade, .25);
+    font-family: $mainFont;
+    font-size: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid rgba($darkShade, .5);
+  }
+
+  &--hover {
+    word-spacing: -1.4px;
+    border-color: rgba($darkShade, .5);
+  }
+}

@@ -1,3 +1,5 @@
+include ../components/text-field/text-field
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -5,3 +7,17 @@ head
   meta(http-equiv='X-UA-Compatible' content='ie=edge')
   title Toxin
 body
+  .wrapper
+    a(class='logo logo--ui' href='index.html'): img(src='assets/img/logo-ui.svg')
+    .container--form-elements
+      .box
+        .box__item
+          .item-description
+            h3.item-description__title Text Field
+            p.item-description__condition Default
+          +input('', 'email', 'Email')
+        .box__item
+          .item-description.item-description--hover
+            h3.item-description__title Text Field
+            p.item-description__condition.item-description__condition--hover Hover / Focus
+          +input('text-field--hover', 'text', 'Email', value='This is pretty awesome')

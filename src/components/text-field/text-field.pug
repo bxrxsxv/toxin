@@ -1,0 +1,5 @@
+mixin input(classNames, type, placeholder, value)
+  if (value)
+    input(class='text-field '+classNames type=''+type placeholder=''+placeholder required value=''+value)
+  else
+    input(class='text-field '+classNames type=''+type placeholder=''+placeholder required)
